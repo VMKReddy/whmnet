@@ -1,0 +1,12 @@
+**/__Previews/
+History/
+Project Logs*
+
+Project Outputs*/*
+!Project Outputs*/Gerber
+!Project Outputs*/NC Drill
+!Project Outputs*/*.pdf
+
+*.WAS
+*.PrjPcbStructure
+*.txt
