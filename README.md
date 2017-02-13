@@ -18,6 +18,10 @@ The wireless sensor is a custom PCB based on:
 
 The wireless sensor performs a measurement every 5 minutes and goes back to low-power mode between each measurement, achieving an ultra-low-power average consumption of 5µA leading to several months of battery life.
 
+The PCB design files are available in the [SensorBoard](./SensorBoard/) directory. It has been designed with Altium Designer.
+
+The MCU firmware is available in the [Sensor](./Sensor/) directory. [SW4STM32](http://www.openstm32.org) Eclipse based IDE from AC6 has been used. The toolchain is GCC-based, and the (free) IDE is part of the STMicroelectronics Open Development Environment. BSP has been generated with [STM32CubeMX](http://www.st.com/en/development-tools/stm32cubemx.html) tool and the [STM32CubeL0](http://www.st.com/en/embedded-software/stm32cubel0.html) open-source library is used.
+
 # The Gateway
 
 The gateway consists in:
@@ -32,6 +36,9 @@ The custom board includes:
 - A green LED indicating radio packet Rx
 
 The STM32L0 reports the measurements from wireless sensors to the Raspberry Pi using the serial port.
+
+The PCB design files are available in the [GatewayBoard](./GatewayBoard/) directory.
+The MCU firmware of the Gateway Board is available in the [Gateway](./Gateway/) directory.
 
 ## Raspberry Pi
 
