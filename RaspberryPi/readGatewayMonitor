@@ -1,0 +1,5 @@
+#!/bin/bash
+until /usr/bin/python /home/pi/templog_gateway/readGateway.py; do
+    echo "Script readGateway.py crashed with exit code $? on $(date +"%D-%Hh%Mm%Ss"). Respawning.." >> /home/pi/templog_gateway/readGatewayMonitor.log
+    sleep 1
+done

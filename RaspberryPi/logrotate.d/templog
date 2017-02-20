@@ -1,0 +1,8 @@
+/home/pi/templog_gateway/readGateway.log {
+	monthly
+	size 10M
+	rotate 12
+	nocompress
+	missingok
+	create 644 root root
+}
